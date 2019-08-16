@@ -32,9 +32,13 @@ Each dataset contains all questions and their corresponding answer records, incl
 
 You can specify a dataset as follows:
 ```
-python3 main.py -dataset=ebooks
+python3 main.py --dataset="stackex_ai"
 ```
-
+#### Data Processing
+You can run the data preprocessing scripts before training the model under the data_process folder as follows:
+```
+python3 stackex_preprocess.py --data_type='seq' --dataset='stackex_ai'
+```
 ## Usage
 ```
 python3 main.py -h
